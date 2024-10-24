@@ -1,3 +1,6 @@
-streamlit==1.25.0
-fpdf==1.7.2
-pymongo==4.5.0
+
+streamlit
+fpdf
+pymongo
+python-dotenv
+
