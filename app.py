@@ -5,13 +5,14 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
 
-# Load environment variables
+# Load environment variables (if using .env file)
 load_dotenv()
 
 # MongoDB connection
 def create_connection():
-    client = MongoClient(os.getenv("MONGO_URI"))
-    db = client['airline_management']  # Database name
+    mongo_uri = "mongodb+srv://arjun:hareeth24@clusterariline.tspcv.mongodb.net/?retryWrites=true&w=majority&appName=Clusterariline"
+    client = MongoClient(mongo_uri)
+    db = client['airline_management']  # Specify your database name
     return db
 
 # Custom CSS for colors and design
